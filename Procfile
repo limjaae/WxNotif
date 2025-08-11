@@ -1,1 +1,1 @@
-web: python3 rss_server.py 
+web: gunicorn wsgi:app --bind 0.0.0.0:$PORT 
